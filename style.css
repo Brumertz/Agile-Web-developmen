@@ -1,0 +1,72 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* General Container Padding */
+.container {
+    padding: 20px;
+}
+
+/* Styling for H1 */
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5rem;
+}
+
+/* Styling for Paragraphs */
+p {
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.6; 
+    
+}
+
+/* Align the collapsed card containers next to each other */
+.collapse-horizontal .card-body {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px; /* Add some space between the cards */
+}
+
+/* Ensure the container for the collapsible elements does not force them to wrap */
+.collapse-container {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Allows horizontal scrolling if the content overflows */
+    padding-top: 15px; /* Add padding to separate content from buttons */
+}
+
+/* Adjust the card width and height */
+.collapse-horizontal .card {
+    width: 100%; /* Allow the card to use full available width */
+    max-width: 100%; /* Max width of the card */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 15px; /* Add margin at the bottom for spacing */
+}
+
+/* Style for the collapse element */
+.collapse {
+    transition: height 0.35s ease; /* Smooth transition for height */
+}
+
+/* Ensure the button has consistent styling */
+.btn-secondary {
+    display: block;
+    width: 100%;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+li{
+    max-width: 100%;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 1.6; 
+}
