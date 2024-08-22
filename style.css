@@ -1,3 +1,8 @@
+/*
+  Name: Brandon Morales Cordoba
+  ID: 30085204
+  Date: 2024-08-22
+*/
 /* CSS Reset */
 * {
     margin: 0;
@@ -8,6 +13,7 @@
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
+    
 }
 
 /* General Container Padding */
@@ -27,7 +33,6 @@ p {
     text-align: justify;
     margin: 20px 0;
     line-height: 1.6; 
-    
 }
 
 /* Align the collapsed card containers next to each other */
@@ -35,6 +40,11 @@ p {
     display: inline-block;
     vertical-align: top;
     margin-right: 10px; /* Add some space between the cards */
+    /* Ensure text breaks correctly and doesn't overflow the container */
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Ensure the container for the collapsible elements does not force them to wrap */
@@ -63,10 +73,112 @@ p {
     width: 100%;
     text-align: left; /* Align text to the left for better readability */
 }
+.btn {
+    font-size: 0.85rem;
+    white-space: normal; /* Permite que el texto se envuelva en lugar de cortarse */
+    overflow-wrap: break-word; /* Permite que el texto largo se rompa y ajuste */
+  }
 
-li{
+/* Styling for list items */
+li {
     max-width: 100%;
     text-align: justify;
     margin: 20px 0;
     line-height: 1.6; 
+}
+
+/* Contact page specific styles */
+.contact-header {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1.8;
+    color: #555;
+}
+.highlight-text {
+    color: #008cba;
+}
+/* Estilos para pantallas medianas (>= 576px y < 768px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .collapse-container .card-body {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .collapse-container {
+        margin-bottom: 1rem;
+        max-width: 85%;
+    }
+
+    /* Ajustes generales para pantallas medianas */
+    h1 {
+        font-size: 2rem;
+        margin: 25px 0;
+    }
+
+    .container {
+        padding: 12px;
+        max-width: 85%;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+    
+}
+
+/* Estilos para pantallas grandes (>= 768px y < 992px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .collapse-container .card-body {
+        padding: 16px;
+        font-size: 1rem;
+    }
+
+    .collapse-container {
+        margin-bottom: 1.25rem;
+        max-width: 80%;
+    }
+
+    /* Ajustes generales para pantallas grandes */
+    h1 {
+        font-size: 2.2rem;
+        margin: 30px 0;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 80%;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+    
+}
+
+/* Estilos para pantallas extra grandes (>= 992px) */
+@media (min-width: 992px) {
+    .collapse-container .card-body {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+
+    .collapse-container {
+        margin-bottom: 1.5rem;
+        max-width: 75%;
+    }
+
+    /* Ajustes generales para pantallas extra grandes */
+    h1 {
+        font-size: 2.5rem;
+        margin: 35px 0;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 75%;
+    }
+
+    li {
+        font-size: 1.1rem;
+    }
 }
