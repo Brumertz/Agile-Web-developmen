@@ -29,10 +29,11 @@ p {
     text-align: justify;
     margin: 20px 0;
     line-height: 1.6; 
+    font-size: 0.90rem;
 }
 
 /* Align the collapsed card containers next to each other */
-.collapse-horizontal .card-body {
+.collapse-vertical .card-body {
     display: inline-block;
     vertical-align: top;
     margin-right: 10px; /* Add some space between the cards */
@@ -41,6 +42,7 @@ p {
     word-wrap: break-word;
     overflow-wrap: break-word;
     max-width: 100%;
+   
 }
 
 /* Ensure the container for the collapsible elements does not force them to wrap */
@@ -51,23 +53,26 @@ p {
 }
 
 /* Adjust the card width and height */
-.collapse-horizontal .card {
+.collapse-vertical .card {
     width: 100%; /* Allow the card to use full available width */
     max-width: 100%; /* Max width of the card */
     height: auto; /* Allow height to adjust based on content */
     margin-bottom: 15px; /* Add margin at the bottom for spacing */
+    
+
 }
 
 /* Style for the collapse element */
 .collapse {
-    transition: height 0.35s ease; /* Smooth transition for height */
+    transition: height 0.0s ease; /* Smooth transition for height */
 }
 
 /* Ensure the button has consistent styling */
 .btn-secondary {
     display: block;
     width: 100%;
-    text-align: left; /* Align text to the left for better readability */
+    text-align: center; /* Align text to the left for better readability */
+    
 }
 .btn {
     font-size: 0.85rem;
@@ -76,11 +81,14 @@ p {
   }
 
 /* Styling for list items */
+
 li {
     max-width: 100%;
     text-align: justify;
     margin: 20px 0;
     line-height: 1.6; 
+    font-size: 0.9rem;
+    
 }
 
 /* Contact page specific styles */
@@ -146,7 +154,7 @@ li {
     }
 
     li {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
 }
@@ -175,7 +183,7 @@ li {
     }
 
     li {
-        font-size: 1.1rem;
+        font-size: .90rem;
     }
 }
 /*
